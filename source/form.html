@@ -10,7 +10,8 @@
   <header class="header">
     <div class="header__inner">
       <a class="logo" href="#">
-        <img src="img/logo.png" width="33" height="37" alt="Cat Energy">
+        <img src="img/icons/logo.svg" width="33" height="37" alt="Cat Energy logo">
+        <img src="img/icons/logo-text.svg" width="101" height="18" alt="Cat Energy logo-text">
       </a>
       <button class="header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -37,60 +38,60 @@
     </div>
   </header>
   <main>
-    <div class="title-text">
-      <h1 class="main-title">Подбор программы</h1>
-      <p class="section-text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+    <div class="intro inner">
+      <h1 class="intro__title">Подбор программы</h1>
+      <p class="intro__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
     </div>
     <form class="order-form" action="https://echo.htmlacademy.ru" method="POST">
       <fieldset class="order-form__group">
-        <div class="order-form__container">
-          <div class="order-form__wrapper">
-            <label class="order-form__label">Имя:*
-              <input class="order-form__input" type="text" value="Барсик" required>
-            </label>
-            <label class="order-form__label">Вес(кг):*
-              <input class="order-form__input" type="number" value="7" required>
-            </label>
-            <label class="order-form__label">Возраст(лет):
-              <input class="order-form__input" type="number" value="7">
-            </label>
-          </div>
-          <ul class="order-form__list">
-            <li class="order-form__item">
-              <input class="visually-hidden" type="radio" id="slim-cat" name="slim" value="Похудение" checked>
-              <label class="order-form__label-radio" for="slim-cat">Похудение</label>
-            </li>
-            <li class="order-form__item">
-              <input class="visually-hidden" type="radio" id="cat-weight" name="slim" value="Набор массы">
-              <label class="order-form__label-radio" for="cat-weight">Набор массы</label>
-            </li>
-            <li class="order-form__item">
-              <input class="visually-hidden" type="radio" id="dont-know" name="slim" value="Не знаю (Нужен ваш совет)">
-              <label class="order-form__label-radio" for="dont-know">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
+        <legend class="visually-hidden">Информация о коте</legend>
+        <div class="order-form__wrapper">
+          <label class="order-form__label">Имя:*
+            <input class="order-form__input" type="text" value="Барсик" required>
+          </label>
+          <label class="order-form__label">Вес(кг):*
+            <input class="order-form__input" type="number" value="7" required>
+          </label>
+          <label class="order-form__label">Возраст(лет):
+            <input class="order-form__input" type="number" value="7">
+          </label>
         </div>
+      </fieldset>
+      <fieldset class="order-form__group">
+        <legend class="visually-hidden">Цели от питания</legend>
+        <ul class="order-form__list">
+          <li class="order-form__item">
+            <input class="visually-hidden" type="radio" id="slim-cat" name="slim" value="Похудение" checked>
+            <label class="order-form__label-radio" for="slim-cat">Похудение</label>
+          </li>
+          <li class="order-form__item">
+            <input class="visually-hidden" type="radio" id="cat-weight" name="slim" value="Набор массы">
+            <label class="order-form__label-radio" for="cat-weight">Набор массы</label>
+          </li>
+          <li class="order-form__item">
+            <input class="visually-hidden" type="radio" id="dont-know" name="slim" value="Не знаю (Нужен ваш совет)">
+            <label class="order-form__label-radio" for="dont-know">Не знаю (Нужен ваш совет)</label>
+          </li>
+        </ul>
       </fieldset>
       <fieldset class="order-form__group">
         <legend class="order-form__title">Контактные данные(владельца кота)</legend>
-        <div class="order-form__container">
-          <ul class="order-form__list">
-            <li class="order-form__item">
-              <label class="order-form__label" for="email">E-mail:*</label>
-              <input class="order-form__input" type="email" id="email" name="email" value="kuklachev@gmail.com"
-                required>
-            </li>
-            <li class="order-form__item">
-              <label class="order-form__label" for="phone">Телефон:*</label>
-              <input class="order-form__input" type="tel" id="phone" name="phone" value="8 (960) 900-60-90" required>
-            </li>
-          </ul>
-        </div>
+        <ul class="order-form__list order-form__container">
+          <li class="order-form__item">
+            <label class="order-form__label" for="email">E-mail:*</label>
+            <input class="order-form__input" type="email" id="email" name="email" value="kuklachev@gmail.com" required>
+          </li>
+          <li class="order-form__item">
+            <label class="order-form__label" for="phone">Телефон:*</label>
+            <input class="order-form__input" type="tel" id="phone" name="phone" value="8 (960) 900-60-90" required>
+          </li>
+        </ul>
       </fieldset>
       <fieldset class="order-form__group">
-        <legend class="order-form__title">Комментарий</legend>
+        <legend class="visually-hidden">Комментарий</legend>
+        <label class="order-form__title" for="comment">Комментарий</label>
         <div class="order-form__container">
-          <textarea name="order-form__text">Расскажите обо всех повадках кота</textarea>
+          <textarea id="comment" name="order-form__text">Расскажите обо всех повадках кота</textarea>
         </div>
       </fieldset>
       <fieldset class="order-form__group">
