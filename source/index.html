@@ -10,7 +10,8 @@
   <header class="header">
     <div class="header__inner">
       <a class="logo" href="#">
-        <img width="174" height="51" alt="Cat Energy">
+        <img src="img/icons/logo.svg" width="33" height="37" alt="Cat Energy logo">
+        <img src="img/icons/logo-text.svg" width="101" height="18" alt="Cat Energy logo-text">
       </a>
       <button class="header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -54,7 +55,7 @@
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat energy Slim
               помодет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="item__catalog" href="#">Каталог Slim <span><img src="img/icon_arrow.svg"></span></a>
+            <a class="item__catalog" href="#">Каталог Slim</a>
           </li>
 
           <li class="foods-goal__item item">
@@ -97,63 +98,61 @@
           в день. </p>
         <div class="example__wrapper-row">
           <ul class="example__list list">
-              <li class="list__item item">
-                <p class="item__text">5 кг</p>
-                <p class="item__text">Снижение веса</p>
-              </li>
-              <li class="list__item">
-                <p class="item__text">60 дней</p>
-                <p class="item__text">Затрачено времени</p>
-              </li>
+            <li class="list__item item">
+              <p class="item__text">5 кг</p>
+              <p class="item__text">Снижение веса</p>
+            </li>
+            <li class="list__item">
+              <p class="item__text">60 дней</p>
+              <p class="item__text">Затрачено времени</p>
+            </li>
           </ul>
         </div>
         <p class="examle__subtitle">Затраты на питание: 15 000 РУБ. </p>
         <div class="example__container">
+          <!-- Позже Алёна объяснит почему каждая картинка в div-->
           <div class="example__image">
-            <!-- Позже Алёна объяснит почему каждая картинка в div-->
+            <img src="img/before-mobile.png" width="311" height="232" alt="Худой кот">
             <div class="example__image">
-              <img src="img/before-mobile.png" width="311" height="232" alt="Худой кот">
-              <div class="example__image">
-                <img src="img/after-mobile.png" width="251" height="240" alt="Жирный кот">
-              </div>
-            </div>
-            <div class="example__control control">
-              <button class="control__slider-btn control__slider-btn--before">Было</button>
-              <input type="range" min="0" max="40" step="1" value="20">
-              <div class="control__slider-bar">
-                <button class="control__slider-toggle"></button>
-              </div>
-              <button class="control__slider-btn control__slider-btn--after">Стало</button>
+              <img src="img/after-mobile.png" width="251" height="240" alt="Жирный кот">
             </div>
           </div>
+          <div class="example__control control">
+            <button class="control__slider-btn control__slider-btn--before">Было</button>
+            <input type="range" min="0" max="40" step="1" value="20">
+            <div class="control__slider-bar">
+              <button class="control__slider-toggle"></button>
+            </div>
+            <button class="control__slider-btn control__slider-btn--after">Стало</button>
+          </div>
         </div>
+      </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__inner inner">
-      <div class="footer__wrapper">
         <p class="footer__text">Приглашаем к сотрудничеству дилеров!</p>
         <p class="footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </div>
-      <div class="map">
-        <!-- Временно не удаляю iframe-->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871569272!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1624627131320!5m2!1sru!2sru"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-      </div>
+    </div>
+    <div class="footer__map">
+      <!-- Временно не удаляю iframe-->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871569272!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1624627131320!5m2!1sru!2sru"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+    <div class="footer__inner inner">
       <a class="logo" href="#">
-        <img width="128" height="24" alt="Cat Energy">
+        <img src="img/footer-logo.png" width="128" height="24" alt="Cat Energy">
       </a>
-        <ul class="socials-list socials">
-          <li class="socials__item"><a href="#"><img src="img/icon_vkontakte.svg" width="23" height="16"
-                alt="Вконтакте"></a></li>
-          <li class="socials__item"><a href="#"><img src="img/icon_instagram.svg" width="16" height="16"
-                alt="Инстаграм"></a></li>
-          <li class="socials__item"><a href="#"><img src="img/icon_facebook.svg" width="22" height="22"
-                alt="Фейсбук"></a>
-          </li>
-        </ul>
+      <ul class="socials-list socials">
+        <li class="socials__item"><a href="#"><img src="img/icon_vkontakte.svg" width="23" height="16"
+              alt="Вконтакте"></a></li>
+        <li class="socials__item"><a href="#"><img src="img/icon_instagram.svg" width="16" height="16"
+              alt="Инстаграм"></a></li>
+        <li class="socials__item"><a href="#"><img src="img/icon_facebook.svg" width="22" height="22" alt="Фейсбук"></a>
+        </li>
+      </ul>
       <div class="footer__copyright copyright">
         <p class="copyright__text">HTML Academy</p>
         <a class="copyright__logo">
