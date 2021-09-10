@@ -1,27 +1,9 @@
 body {
-  font-family:"MyFont","Arial",san-serif;
-  font-size: 16px;
-  color:#444444;;
-  line-height: 24px;
+  font-family:@main-font;
+  font-size: @font-size-m;
+  color:@description-color;;
+  line-height: @line-height-xl;
 }
 a {
   text-decoration: none;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.btn {
-  background-color: @background-accent;
-  border:none;
-  display: block;
 }
