@@ -1,11 +1,33 @@
 .header {
-  display: block;
   font-family: @main-font;
   text-transform: @text-transform-upper;
   line-height: @line-height-l;
   color: @text-color;
-  list-style-type: none;
   font-size: @font-size-l;
   font-style: @font-style-normal;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .header__inner {
+    display: flex;
+  }
+  .header__toggle {
+    display: none;
+  }
+}
+
+.header__logo {
+  flex-shrink: 0;
+  height: 37px;
+  width: 191px;
+  @media (min-width: @tablet-width) {
+    height: 51px;
+    width: 174px;
+    margin-right:auto;
+  }
+  @media (min-width: @desktop-width) {
+    width:202px;
+    height: 59px;
+  }
 }
