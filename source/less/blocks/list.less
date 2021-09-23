@@ -1,12 +1,26 @@
 .list {
   list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.list__subtitle {
+.list__item-value {
+  color: @text-color;
   font-family: @main-font;
-  color: @list-color;
-  font-size: @font-size-m;
-  line-height: @line-height-l;
+  font-size: @font-size-xl;
+  line-height: @line-height-xl;
   font-weight: @font-weight-normal;
   text-transform: @text-transform-upper;
+  text-align: center;
+}
+
+.list__item-text {
+  color: @description-color;
+  font-family: @add-font;
+  font-size: @font-size-xs;
+  line-height: @line-height-xs;
+  font-weight: @font-weight-normal;
+  text-align: center;
 }

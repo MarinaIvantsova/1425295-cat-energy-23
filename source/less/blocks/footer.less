@@ -1,3 +1,10 @@
+.footer {
+  .desktop-width({
+    position: relative;
+    height: 400px;
+  });
+}
+
 .footer__text {
   color: @footer-text;
   font-family: @main-font;
@@ -16,5 +23,32 @@
 }
 
 .footer__inner {
-  background-color: @border-color;
+  background-color: @title-color;
+  display: flex;
+  justify-content: space-between;
+  .desktop-width({
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    left: 110px;
+    top: 95px;
+    padding-left: 76px;
+    padding-bottom: 51px;
+    padding-right: 89px;
+    padding-top: 62px;
+  });
+}
+
+.footer__map {
+  iframe {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.footer__inner-bottom {
+  .tablet-width({
+    display: flex;
+    justify-content: space-between;
+  });
 }

@@ -1,0 +1,17 @@
+.inner {
+  width: @mobile-width;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0 auto;
+
+
+  .tablet-width({
+    width: @tablet-width;
+    padding: 0 30px;
+  });
+
+  .desktop-width({
+    width: @desktop-width;
+    padding: 0 110px;
+  });
+}

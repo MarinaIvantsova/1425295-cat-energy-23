@@ -1,5 +1,17 @@
 .features-list {
   list-style-type: none;
+  display: grid;
+  gap: 20px;
+  padding-left: 0;
+  .tablet-width({
+    grid-template-columns: 1fr 1fr;
+    row-gap: 37px;
+    column-gap: 153px;
+  });
+  .desktop-width({
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 77px;
+  });
 }
 
 .features-list__item {

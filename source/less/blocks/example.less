@@ -2,6 +2,25 @@
   background-color: @background-color;
 }
 
+.example__wrapper-row {
+  .tablet-width({
+    display: flex;
+    justify-content: space-between;
+  });
+  .desktop-width({
+    display: block;
+    grid-area: weight;
+  });
+}
+
+.example__inner {
+  .desktop-width({
+    display: grid;
+    grid-template-areas: "title cat" "text cat" "weight cat";
+    grid-template-columns: 1fr 1fr;
+  });
+}
+
 .example__title {
   font-family: @main-font;
   font-weight: @font-weight-normal;
@@ -9,6 +28,9 @@
   line-height: @line-height-xxl;
   text-align: center;
   color: @text-color;
+  .desktop-width({
+    grid-area: title;
+  });
 }
 
 .example__text {
@@ -17,9 +39,12 @@
   font-size: @font-size-s;
   line-height: @line-height-m;
   font-weight: @font-weight-normal;
+  .desktop-width({
+    grid-area: text;
+  });
 }
 
-.examle__subtitle {
+.example__subtitle {
   color: @text-color;
   font-family: @main-font;
   font-size: @font-size-s;
@@ -27,4 +52,10 @@
   font-weight: @font-weight-normal;
   text-align: center;
   text-transform: @text-transform-upper;
+}
+
+.example__container {
+  .desktop-width({
+    grid-area: cat;
+  });
 }
