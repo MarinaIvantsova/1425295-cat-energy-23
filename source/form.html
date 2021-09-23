@@ -45,6 +45,7 @@
       <p class="intro__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
     </div>
     <form class="order-form" action="https://echo.htmlacademy.ru" method="POST">
+      <div class="order-form__inner">
       <fieldset class="order-form__group">
         <legend class="visually-hidden">Информация о коте</legend>
         <div class="order-form__wrapper">
@@ -76,6 +77,7 @@
           </li>
         </ul>
       </fieldset>
+      </div>
       <fieldset class="order-form__group">
         <legend class="order-form__title">Контактные данные(владельца кота)</legend>
         <ul class="order-form__list order-form__container">
@@ -98,7 +100,7 @@
       </fieldset>
       <fieldset class="order-form__group">
         <legend class="order-form__title">Дополнительно</legend>
-        <ul class="order-form__list order-form__container">
+        <ul class="order-form__list order-form__list--extra order-form__container">
           <li class="order-form__item">
             <input class="visually-hidden" type="checkbox" id="sweetener" name="sweetener" value="Сахарозаменитель"
               checked>
@@ -125,18 +127,18 @@
     </form>
   </main>
   <footer class="footer">
-    <div class="footer__inner inner">
-      <div class="footer__wrapper">
+    <div class="footer__inner footer__inner--form inner">
         <p class="footer__text">Приглашаем к сотрудничеству дилеров!</p>
         <p class="footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </div>
-      <div class="map">
-        <!-- Временно не удаляю iframe-->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871569272!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1624627131320!5m2!1sru!2sru"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-      </div>
+    </div>
+    <div class="footer__map">
+      <!-- Временно не удаляю iframe-->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871569272!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1624627131320!5m2!1sru!2sru"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+    <div class="footer__inner-bottom inner">
       <a class="logo" href="#">
         <img src="img/footer-logo.png" width="128" height="24" alt="Cat Energy">
       </a>

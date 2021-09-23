@@ -27,3 +27,23 @@
   text-transform: @text-transform-upper;
   text-align: center;
 }
+
+.extra-list__wrapper {
+  display: flex;
+  justify-content: space-between;
+  .tablet-width({
+    display: flex;
+    justify-content: end;
+  });
+  .desktop-width({
+    display: flex;
+    justify-content: space-between;
+  });
+}
+
+.extra-list__item {
+  .desktop-width({
+    display: flex;
+    justify-content: space-between;
+  });
+}

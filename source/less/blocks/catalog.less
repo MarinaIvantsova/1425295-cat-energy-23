@@ -8,7 +8,15 @@
 
 .catalog__list {
   list-style-type: none;
-}
+  .tablet-width({
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  });
+  .desktop-width({
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  });
+  }
 
 .catalog__text {
   font-family: @main-font;
@@ -21,4 +29,12 @@
 .catalog__text-promo {
   font-family: @add-font;
   color: @description-color;
+}
+
+.catalog-item__wrapper {
+  display: flex;
+  justify-content: space-between;
+  .tablet-width({
+    display: block;
+  });
 }
