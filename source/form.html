@@ -47,10 +47,11 @@
       <p class="intro__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
     </div>
     <form class="order-form" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="order-form__group inner">
+      <div class="order-form__row inner">
+        <div class="order-form__column">
+        <fieldset class="order-form__group">
           <legend class="visually-hidden">Информация о коте</legend>
-          <div class="order-form__wrapper">
-          <ul class="order-form__list inner">
+          <ul class="order-form__list">
             <li class="order-form__item">
               <label class="order-form__label" for="cat-name">Имя:*</label>
               <input class="order-form__input" type="text" id="cat-name" name="cat-name" value="Барсик" required>
@@ -64,11 +65,12 @@
               <input class="order-form__input" type="number" id="cat-age" name="cat-age" value="7">
             </li>
           </ul>
-        </div>
         </fieldset>
-        <fieldset class="order-form__group inner">
+      </div>
+      <div class="order-form__column">
+        <fieldset class="order-form__group">
           <legend class="visually-hidden">Цели от питания</legend>
-          <ul class="order-form__list order-form__list--aims inner">
+          <ul class="order-form__list order-form__list--aims">
             <li class="order-form__item">
               <input class="visually-hidden" type="radio" id="slim-cat" name="slim" value="Похудение" checked>
               <label class="order-form__label-radio" for="slim-cat">Похудение</label>
@@ -83,16 +85,18 @@
             </li>
           </ul>
         </fieldset>
-      <fieldset class="order-form__group inner">
+      </div>
+      </div>
+        <fieldset class="order-form__group inner">
         <legend class="order-form__title inner">Контактные данные<br> (владельца кота)</legend>
         <ul class="order-form__list order-form__list--contacts inner">
-          <li class="order-form__item">
+          <li class="order-form__item order-form__item--contacts inner">
             <label class="order-form__label order-form__label--contacts" for="email">E-mail:*</label>
-            <input class="order-form__input" type="email" id="email" name="email" value="kuklachev@gmail.com" required>
+            <input class="order-form__input order-form__input--contacts" type="email" id="email" name="email" value="kuklachev@gmail.com" required>
           </li>
-          <li class="order-form__item">
+          <li class="order-form__item inner">
             <label class="order-form__label order-form__label--contacts" for="phone">Телефон:*</label>
-            <input class="order-form__input" type="tel" id="phone" name="phone" value="8 (960) 900-60-90" required>
+            <input class="order-form__input order-form__input--contacts" type="tel" id="phone" name="phone" value="8 (960) 900-60-90" required>
           </li>
         </ul>
       </fieldset>
@@ -106,7 +110,7 @@
       </fieldset>
       <fieldset class="order-form__group inner">
         <legend class="order-form__title inner">Дополнительно</legend>
-        <ul class="order-form__list order-form__list--extra order-form__container inner">
+        <ul class="order-form__list order-form__list--extra inner">
           <li class="order-form__item">
             <input class="visually-hidden" type="checkbox" id="sweetener" name="sweetener" value="Сахарозаменитель"
               checked>
