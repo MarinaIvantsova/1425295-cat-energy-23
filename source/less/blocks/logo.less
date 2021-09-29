@@ -1,4 +1,17 @@
 .logo {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  .tablet-width({
+    justify-content: flex-start;
+  })
+}
+
+.logo__img {
+  margin: 0 auto;
+  .tablet-width({
+    margin: 0;
+    margin-left: 12px;
+  })
 }

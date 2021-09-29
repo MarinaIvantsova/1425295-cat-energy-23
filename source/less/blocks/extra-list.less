@@ -1,5 +1,7 @@
 .extra-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .extra-list__title {
@@ -9,6 +11,9 @@
   line-height: @line-height-s;
   text-transform: @text-transform-upper;
   color: @list-color;
+  .tablet-width({
+    width: 50%;
+  })
 }
 
 .extra-list__description {
@@ -17,6 +22,14 @@
   font-size: @font-size-s;
   line-height: @line-height-subtitle;
   color: @description-color;
+  margin: 0;
+  .tablet-width({
+    min-width: 93px;
+    text-align: right;
+  });
+  .desktop-width({
+    width: 156px;
+  })
 }
 
 .extra-list__btn {
@@ -26,6 +39,15 @@
   line-height: @line-height-l;
   text-transform: @text-transform-upper;
   text-align: center;
+  .tablet-width({
+    width: 100%;
+    margin-top: 25px;
+  });
+  .desktop-width({
+    width: 244px;
+    margin-top: 0;
+    margin-left: 38px;
+  })
 }
 
 .extra-list__wrapper {
@@ -34,6 +56,7 @@
   .tablet-width({
     display: flex;
     justify-content: end;
+    width: 50%;
   });
   .desktop-width({
     display: flex;
@@ -42,8 +65,22 @@
 }
 
 .extra-list__item {
+  .tablet-width({
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 26px;
+    padding-bottom: 28px;
+    padding-left: 38px;
+    padding-right: 38px;
+  });
   .desktop-width({
     display: flex;
     justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    flex-wrap: nowrap;
+    align-items: center;
   });
 }

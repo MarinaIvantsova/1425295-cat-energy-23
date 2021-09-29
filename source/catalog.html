@@ -10,14 +10,16 @@
 
 <body>
   <header class="header">
-    <div class="header__inner">
-      <a class="logo" href="#">
-        <img src="img/icons/logo.svg" width="33" height="37" alt="Cat Energy logo">
-        <img src="img/icons/logo-text.svg" width="101" height="18" alt="Cat Energy logo-text">
-      </a>
-      <button class="header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <div class="header__inner inner">
+      <div class="header__logo">
+        <a class="logo" href="#">
+          <img src="img/icons/logo.svg" width="33" height="37" alt="Cat Energy logo">
+          <img class="logo__img" src="img/icons/logo-text.svg" width="101" height="18" alt="Cat Energy logo-text">
+        </a>
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <nav class="header__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
@@ -44,8 +46,7 @@
       <div class="intro inner">
       <h1 class="intro__title">Каталог продукции</h1>
       </div>
-      <div class="catalog__wrapper">
-        <ul class="catalog__list">
+        <ul class="catalog__list inner">
           <li class="catalog__item catalog-item">
             <div class="catalog-item__wrapper">
               <a class="catalog-item__link">
@@ -251,18 +252,17 @@
             <a class="catalog-item__btn btn btn--show" href="#">Показать все</a>
           </li>
         </ul>
-      </div>
     </section>
-    <section class="catalog-extra extra">
+    <section class="catalog-extra extra inner">
       <h2 class="extra__title">Дополнительные товары</h2>
       <div class="extra__wrapper">
         <ul class="extra__list extra-list">
           <li class="extra-list__item">
             <b class="extra-list__title">Сахарозаменитель</b>
             <div class="extra-list__wrapper">
-            <p class="extra-list__description">1 упаковка (100 г)</p>
-            <p class="extra-list__description">200 Р.</p>
-          </div>
+              <p class="extra-list__description">1 упаковка (100 г)</p>
+              <p class="extra-list__description">200 Р.</p>
+            </div>
             <a class="extra-list__btn btn" href="#">Заказать</a>
           </li>
           <li class="extra-list__item">
