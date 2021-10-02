@@ -14,3 +14,11 @@
   line-height: @line-height-xl;
   color: @text-color;
 }
+
+.extra__wrapper {
+  .desktop-width({
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    gap: 80px;
+  });
+}

@@ -5,20 +5,28 @@
 }
 
 .nav__list {
+  line-height: @line-height-l;
+  font-size: @font-size-l;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
   .tablet-width({
     display:flex;
+    font-size: 18px;
   });
 }
 
 .nav__item {
   border-bottom: 1px solid @border-color-header;
   font-weight: @font-weight-middle;
-  margin-left: 70px;
-  margin-right: 70px;
   padding-bottom: 24px;
   padding-top: 22px;
   text-decoration: none;
+  .tablet-width({
+    margin-left: 34px;
+});
 }
 
 .nav__link {
