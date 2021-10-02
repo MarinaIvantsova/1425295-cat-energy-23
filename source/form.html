@@ -46,10 +46,8 @@
       <h1 class="intro__title">Подбор программы</h1>
       <p class="intro__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
     </div>
-    <form class="order-form" action="https://echo.htmlacademy.ru" method="POST">
-      <div class="order-form__row inner">
-        <div class="order-form__column">
-        <fieldset class="order-form__group">
+    <form class="order-form inner" action="https://echo.htmlacademy.ru" method="POST" >
+        <fieldset class="order-form__group order-form__group--desktop-short">
           <legend class="visually-hidden">Информация о коте</legend>
           <ul class="order-form__list">
             <li class="order-form__item">
@@ -66,9 +64,7 @@
             </li>
           </ul>
         </fieldset>
-      </div>
-      <div class="order-form__column">
-        <fieldset class="order-form__group">
+        <fieldset class="order-form__group order-form__group--desktop-short">
           <legend class="visually-hidden">Цели от питания</legend>
           <ul class="order-form__list order-form__list--aims">
             <li class="order-form__item">
@@ -85,32 +81,30 @@
             </li>
           </ul>
         </fieldset>
-      </div>
-      </div>
-        <fieldset class="order-form__group inner">
-        <legend class="order-form__title inner">Контактные данные<br> (владельца кота)</legend>
-        <ul class="order-form__list order-form__list--contacts inner">
-          <li class="order-form__item order-form__item--contacts inner">
+        <fieldset class="order-form__group order-form__group--contacts">
+        <legend class="order-form__title">Контактные данные<br> (владельца кота)</legend>
+        <ul class="order-form__list order-form__list--contacts">
+          <li class="order-form__item order-form__item--contacts">
             <label class="order-form__label order-form__label--contacts" for="email">E-mail:*</label>
             <input class="order-form__input order-form__input--contacts" type="email" id="email" name="email" value="kuklachev@gmail.com" required>
           </li>
-          <li class="order-form__item inner">
+          <li class="order-form__item order-form__item--contacts">
             <label class="order-form__label order-form__label--contacts" for="phone">Телефон:*</label>
             <input class="order-form__input order-form__input--contacts" type="tel" id="phone" name="phone" value="8 (960) 900-60-90" required>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="order-form__group inner">
+      <fieldset class="order-form__group order-form__group--comment">
         <legend class="visually-hidden">Комментарий</legend>
-        <label class="order-form__title inner" for="comment">Комментарий</label>
-        <div class="order-form__container inner">
+        <label class="order-form__title" for="comment">Комментарий</label>
+        <div class="order-form__container">
           <textarea class="order-form__textarea" id="comment"
             name="order-form__text">Расскажите обо всех повадках кота</textarea>
         </div>
       </fieldset>
-      <fieldset class="order-form__group inner">
-        <legend class="order-form__title inner">Дополнительно</legend>
-        <ul class="order-form__list order-form__list--extra inner">
+      <fieldset class="order-form__group order-form__group--extra">
+        <legend class="order-form__title">Дополнительно</legend>
+        <ul class="order-form__list order-form__list--extra">
           <li class="order-form__item">
             <input class="visually-hidden" type="checkbox" id="sweetener" name="sweetener" value="Сахарозаменитель"
               checked>
@@ -130,7 +124,7 @@
           </li>
         </ul>
       </fieldset>
-      <div class="order-form__footer inner">
+      <div class="order-form__footer">
         <button class="order-form__btn btn" type="submit">Отправить заявку</button>
         <p class="order-form__text">* — Обязательные поля</p>
       </div>

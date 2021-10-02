@@ -1,3 +1,11 @@
+.order-form {
+  .desktop-width({
+    display: grid;
+    grid-template-areas: "fio radio" " contacts contacts" "comment comment" "check check" "submit submit" ;
+    row-gap: 70px;
+    column-gap: 80px;
+  })
+}
 .order-form__item {
   font-family: @main-font;
   color: @list-color;
@@ -21,12 +29,6 @@
   });
 }
 
-.order-form__item--contacts {
-  .desktop-width({
-    width: 50%;
-  });
-}
-
 .order-form__input {
   font-family: @main-font;
   color: @description-color;
@@ -39,9 +41,9 @@
   width: 100%;
   .desktop-width({
     padding-left: 20px;
-    padding-right: 424px;
+    padding-right: 40px;
     padding-top: 10px;
-    padding-bottom: 11px;
+    padding-bottom: 8px;
   });
 }
 
@@ -130,6 +132,9 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  .desktop-width({
+    width: 100%;
+  });
 }
 
 .order-form__list--extra {
@@ -151,9 +156,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 104px;
-    padding-left: 110px;
-    padding-top: 57px;
-  });
+    padding-left: 0;
+    padding-right: 0;
+    });
 }
 
 .order-form__inner {
@@ -165,11 +170,6 @@
 
 .order-form__group {
   border: 0 none;
-  margin: 0;
-  padding: 0;
-  .desktop-width({
-    width: 50%;
-  });
 }
 
 .order-form__label-radio {
@@ -184,14 +184,16 @@
   margin-top: 35px;
   margin-bottom: 23px;
   .desktop-width({
-    display: flex ;
-    justify-content: flex-start;
-    align-items: center;
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+    gap: 78px;
     margin-top: 76px;
+    width: 100%;
   });
 }
 
 .order-form__footer {
+  grid-area: submit;
   .tablet-width({
     display: flex;
     justify-content: flex-start;
@@ -209,12 +211,14 @@
   });
 }
 
-.order-form__input--contacts {
-  .desktop-width({
-    padding-left: 18px;
-    padding-right: 258px;
-    padding-top: 10px;
-    padding-bottom: 8px;
-    min-width: max-content;
-  });
+.order-form__group--comment {
+  grid-area: comment;
+}
+
+.order-form__group--extra {
+  grid-area: check;
+}
+
+.order-form__group--contacts {
+  grid-area: contacts;
 }
